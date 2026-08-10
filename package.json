@@ -1,7 +1,7 @@
 {
-  "name": "itc-spec",
+  "name": "utc-spec",
   "version": "1.0.0",
-  "description": "Intelligent Tool Calling — specification and reference implementation",
+  "description": "Universal Tool Calling — specification and reference implementation",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

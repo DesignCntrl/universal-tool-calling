@@ -1,12 +1,12 @@
-# ITC Specification v1.0
+# UTC Specification v1.0
 
-**Intelligent Tool Calling** is a deterministic detection cascade that enables tool invocation from natural language, independent of the LLM's ability to generate structured function calls.
+**Universal Tool Calling** is a deterministic detection cascade that enables tool invocation from natural language, independent of the LLM's ability to generate structured function calls.
 
 ---
 
 ## 1. Overview
 
-ITC provides a 3-layer cascade for detecting and executing tool calls from user messages:
+UTC provides a 3-layer cascade for detecting and executing tool calls from user messages:
 
 1. **Layer 0 — Model Detection**: The LLM generates structured `tool_calls` in its response. If present, execute directly.
 2. **Layer 1 — Hard Keyword Detection**: Simple substring matching on the user's original message. High confidence (0.95), instant execution.
@@ -181,11 +181,11 @@ Helper function used by all extractors.
 
 ### 6.1 Round 0 Fallback
 
-When the model returns text without `tool_calls` on the first round, ITC checks the user's message for trigger patterns. If found, the tool is executed and the result is fed back to the model for synthesis.
+When the model returns text without `tool_calls` on the first round, UTC checks the user's message for trigger patterns. If found, the tool is executed and the result is fed back to the model for synthesis.
 
 ### 6.2 LLM Failure Fallback
 
-When the LLM call itself fails (timeout, connection error, rate limit), ITC checks the user's message for trigger patterns. If found, the tool is executed directly and the raw output is returned.
+When the LLM call itself fails (timeout, connection error, rate limit), UTC checks the user's message for trigger patterns. If found, the tool is executed directly and the raw output is returned.
 
 ### 6.3 Parallel Tool Execution
 
@@ -195,7 +195,7 @@ When the model generates multiple `tool_calls`, they are executed concurrently u
 
 ## 7. Local Model Optimization
 
-For local/quantized models with limited context windows, ITC provides a reduced tool schema set:
+For local/quantized models with limited context windows, UTC provides a reduced tool schema set:
 
 | Constraint | Default | Reason |
 |------------|---------|--------|
@@ -239,7 +239,7 @@ For local/quantized models with limited context windows, ITC provides a reduced 
 
 ---
 
-## 9. Extending ITC
+## 9. Extending UTC
 
 ### Adding a New Tool
 

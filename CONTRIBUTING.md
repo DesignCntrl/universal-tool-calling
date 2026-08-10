@@ -1,4 +1,4 @@
-# Contributing to ITC
+# Contributing to UTC
 
 Contributions are welcome. Please follow these guidelines.
 

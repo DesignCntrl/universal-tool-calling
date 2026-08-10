@@ -1,4 +1,4 @@
-import { runCascade, detectNaturalTrigger } from '../src/index.js';
+import { runCascade } from '../src/index.js';
 
 async function executeTool(tool: string, args: Record<string, unknown>): Promise<string> {
   console.log(`[EXEC] ${tool}`, JSON.stringify(args));

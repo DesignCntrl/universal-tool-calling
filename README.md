@@ -1,4 +1,4 @@
-# ITC — Intelligent Tool Calling
+# UTC — Universal Tool Calling
 
 **The specification that makes tools work even when models can't generate function calls.**
 
@@ -25,7 +25,7 @@ Traditional tool calling requires models to generate structured JSON:
 
 Large models (GPT-4, Claude, Qwen-32B) handle this fine. But smaller models — 1B-8B parameter, quantized, local — often fail. They might say "let me search for that" without ever emitting a function call, get overwhelmed by JSON schemas consuming thousands of tokens of context, or simply not understand the protocol.
 
-**ITC solves this by letting the infrastructure do the detection, not the model.**
+**UTC solves this by letting the infrastructure do the detection, not the model.**
 
 ## Architecture: The 3-Layer Cascade
 
@@ -78,7 +78,7 @@ User message: "search the web for latest AI news"
 ## Quick Start
 
 ```typescript
-import { detectNaturalTrigger } from 'itc-spec';
+import { detectNaturalTrigger } from 'utc-spec';
 
 const result = detectNaturalTrigger('search the web for latest AI news');
 
@@ -102,7 +102,7 @@ if (result) {
 
 ## How It Compares
 
-| Feature | Native Function Calling | ITC |
+| Feature | Native Function Calling | UTC |
 |---------|------------------------|-----|
 | Requires model support | Yes | No |
 | Works with small models | Sometimes | Always |
@@ -115,7 +115,7 @@ if (result) {
 ## Installation
 
 ```bash
-npm install itc-spec
+npm install utc-spec
 ```
 
 ## Contributing
