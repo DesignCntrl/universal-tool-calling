@@ -1,0 +1,38 @@
+{
+  "name": "itc-spec",
+  "version": "1.0.0",
+  "description": "Intelligent Tool Calling — specification and reference implementation",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "example:basic": "tsx examples/basic.ts",
+    "example:custom": "tsx examples/custom-trigger.ts",
+    "example:llm": "tsx examples/with-llm.ts"
+  },
+  "keywords": [
+    "llm",
+    "tool-calling",
+    "function-calling",
+    "natural-language",
+    "specification",
+    "agent"
+  ],
+  "author": "DesignCntrl",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0",
+    "tsx": "^4.7.0"
+  }
+}
