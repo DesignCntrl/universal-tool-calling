@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/utc-cover.png" alt="UTC — Universal Tool Calling" width="100%">
+</p>
+
 # UTC — Universal Tool Calling
 
 **The specification that makes tools work even when models can't generate function calls.**
