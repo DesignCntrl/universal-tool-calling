@@ -119,7 +119,7 @@ if (result) {
 ## Installation
 
 ```bash
-npm install utc-spec
+npm install @designcntrl/universal-tool-calling
 ```
 
 ## Contributing

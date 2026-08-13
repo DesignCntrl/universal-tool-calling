@@ -1,5 +1,5 @@
 {
-  "name": "utc-spec",
+  "name": "@designcntrl/universal-tool-calling",
   "version": "1.0.0",
   "description": "Universal Tool Calling — specification and reference implementation",
   "type": "module",
