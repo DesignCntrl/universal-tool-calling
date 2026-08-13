@@ -27,7 +27,7 @@ Traditional tool calling requires models to generate structured JSON:
 }
 ```
 
-Large models (GPT-4, Claude, Qwen-32B) handle this fine. But smaller models — 1B-8B parameter, quantized, local — often fail. They might say "let me search for that" without ever emitting a function call, get overwhelmed by JSON schemas consuming thousands of tokens of context, or simply not understand the protocol.
+Large models (GPT-X, Claude, Qwen-32B) handle this fine. But smaller models — 1B-8B parameter, quantized, local — often fail. They might say "let me search for that" without ever emitting a function call, get overwhelmed by JSON schemas consuming thousands of tokens of context, or simply not understand the protocol.
 
 **UTC solves this by letting the infrastructure do the detection, not the model.**
 
