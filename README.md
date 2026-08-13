@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DesignCntrl/universal-tool-calling/main/assets/utc-cover.jpg" alt="UTC — Universal Tool Calling" width="100%">
+  <img src="./assets/utc-cover.jpg" alt="UTC — Universal Tool Calling" width="100%">
 </p>
 
 # UTC — Universal Tool Calling
